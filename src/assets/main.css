@@ -1,0 +1,55 @@
+/* ============================================
+   GLOBAL LAYOUT — main.css
+   ============================================
+   This imports base.css (our design tokens) and
+   defines the overall app layout. In Vue, this
+   file is imported once in main.ts and applies
+   globally to the entire app.
+   ============================================ */
+
+@import './base.css';
+
+#app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+  min-height: 100vh;
+}
+
+/* ---- Utility classes ---- */
+.fade-enter-active,
+.fade-leave-active {
+  transition:
+    opacity var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.fade-enter-from {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+/* List transition for task items */
+.list-enter-active,
+.list-leave-active {
+  transition: all var(--transition-normal);
+}
+
+.list-enter-from {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.list-move {
+  transition: transform var(--transition-normal);
+}
