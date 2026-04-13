@@ -1,31 +1,4 @@
-<!-- ============================================
-     COMPONENT — TaskForm.vue
-     ============================================
-     🧠 WHAT YOU'LL LEARN HERE:
 
-     1. v-model — Two-way data binding (like controlled
-        inputs in React, but way less boilerplate)
-
-     2. defineEmits — How child components send events
-        to parents (like callback props in React)
-
-     3. ref() for local state — Component-level state
-        that's reactive
-
-     4. <template> — Vue's HTML-like template syntax
-        (instead of JSX)
-     ============================================ -->
-
-<!--
-  <script setup lang="ts">
-  ────────────────────────────────────────────────
-  The <script setup> is Vue's modern way of writing
-  component logic. It's a compile-time shorthand that:
-  - Auto-exposes everything to the template
-  - No need for a return statement
-  - No need for a setup() function
-  - TypeScript works out of the box
--->
 <script setup lang="ts">
 import { ref } from 'vue'
 import type { Task } from '@/composables/useTaskManager'
