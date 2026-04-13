@@ -70,17 +70,7 @@ function handleSubmit() {
   </form>
 </template>
 
-<!--
-  <style scoped>
-  ────────────────────────────────────────────────
-  The "scoped" attribute means these styles ONLY
-  apply to this component. Vue adds a unique
-  data-attribute to each element and scopes the
-  CSS to match.
 
-  No more CSS Modules, styled-components, or
-  worrying about class name collisions!
--->
 <style scoped>
 .task-form {
   background: var(--bg-card);
