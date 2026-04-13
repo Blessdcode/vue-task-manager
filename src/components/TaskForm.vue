@@ -16,10 +16,10 @@ const priority = ref<Task['priority']>('medium')
 function handleSubmit() {
   if (!title.value.trim()) return
 
-  // Emit the 'add' event to the parent, with the form data
+  
   emit('add', title.value, category.value, priority.value)
 
-  // Reset form
+
   title.value = ''
   category.value = 'personal'
   priority.value = 'medium'
