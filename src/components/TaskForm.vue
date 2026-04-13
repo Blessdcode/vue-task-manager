@@ -31,17 +31,7 @@ function handleSubmit() {
 
   <form class="task-form" @submit.prevent="handleSubmit" id="task-form">
     <div class="form-row">
-      <!--
-        v-model — Two-way data binding.
-        ─────────────────────────────────
-        v-model="title" is equivalent to:
-          :value="title"
-          @input="title = $event.target.value"
-
-        It binds the input's value TO the ref AND
-        updates the ref when the user types. No need
-        for separate onChange handlers!
-      -->
+    
       <input
         id="task-title-input"
         v-model="title"
@@ -57,7 +47,7 @@ function handleSubmit() {
     </div>
 
     <div class="form-options">
-      <!-- v-model on <select> works the same way -->
+    
       <div class="select-wrapper">
         <label for="category-select">📁</label>
         <select id="category-select" v-model="category" class="form-select">
