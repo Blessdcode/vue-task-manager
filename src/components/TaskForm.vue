@@ -26,17 +26,7 @@ function handleSubmit() {
 }
 </script>
 
-<!--
-  <template>
-  ────────────────────────────────────────────────
-  Vue uses HTML-like templates instead of JSX.
-  Key differences from React/JSX:
-  - v-model="ref" instead of value={state} + onChange
-  - @submit instead of onSubmit
-  - :class instead of className
-  - v-for instead of .map()
-  - v-if instead of {condition && <element>}
--->
+
 <template>
   <!--
     @submit.prevent — Event listener + modifier.
