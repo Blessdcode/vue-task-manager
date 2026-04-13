@@ -8,13 +8,7 @@ const emit = defineEmits<{
   add: [title: string, category: Task['category'], priority: Task['priority']]
 }>()
 
-/*
-  ref() for local form state.
-  ─────────────────────────────
-  These refs are local to this component — they don't
-  live in the composable because they're just UI state
-  (the form's current input values).
-*/
+
 const title = ref('')
 const category = ref<Task['category']>('personal')
 const priority = ref<Task['priority']>('medium')
