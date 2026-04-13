@@ -28,16 +28,7 @@ function handleSubmit() {
 
 
 <template>
-  <!--
-    @submit.prevent — Event listener + modifier.
-    ─────────────────────────────────────────────
-    @ is shorthand for v-on: (event listener)
-    .prevent is a modifier that calls e.preventDefault()
 
-    In React: <form onSubmit={(e) => { e.preventDefault(); ... }}>
-    In Vue:   <form @submit.prevent="handleSubmit">
-    Much cleaner!
-  -->
   <form class="task-form" @submit.prevent="handleSubmit" id="task-form">
     <div class="form-row">
       <!--
