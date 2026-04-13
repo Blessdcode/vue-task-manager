@@ -3,19 +3,7 @@
 import { ref } from 'vue'
 import type { Task } from '@/composables/useTaskManager'
 
-/*
-  defineEmits — Declaring events this component can emit.
-  ─────────────────────────────────────────────────────────
-  In React, you'd pass a callback prop like:
-    <TaskForm onAdd={(title, cat, pri) => ...} />
 
-  In Vue, child components "emit" events, and parents
-  listen with @eventName:
-    <TaskForm @add="handleAdd" />
-
-  defineEmits tells TypeScript what events exist and
-  what arguments they carry.
-*/
 const emit = defineEmits<{
   add: [title: string, category: Task['category'], priority: Task['priority']]
 }>()
