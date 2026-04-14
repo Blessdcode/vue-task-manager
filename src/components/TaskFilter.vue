@@ -2,26 +2,7 @@
 <script setup lang="ts">
 import type { FilterStatus, FilterCategory, FilterPriority } from '@/composables/useTaskManager'
 
-/*
-  defineModel() — Two-way prop binding (Vue 3.4+).
-  ──────────────────────────────────────────────────
-  This is a newer Vue feature that simplifies the
-  common pattern of "prop down, event up."
 
-  Without defineModel, you'd need:
-    const props = defineProps(['status'])
-    const emit = defineEmits(['update:status'])
-    // then: emit('update:status', newValue)
-
-  With defineModel:
-    const status = defineModel<FilterStatus>('status')
-    // then: status.value = newValue  ← that's it!
-
-  The parent uses it like:
-    <TaskFilter v-model:status="filterStatus" />
-
-  It's like having useState that syncs with the parent!
-*/
 const status = defineModel<FilterStatus>('status', { required: true })
 const category = defineModel<FilterCategory>('category', { required: true })
 const priority = defineModel<FilterPriority>('priority', { required: true })
