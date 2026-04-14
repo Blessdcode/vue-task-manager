@@ -36,18 +36,7 @@ const priorityOptions: { value: FilterPriority; label: string }[] = [
     <div class="filter-group">
       <span class="filter-label">Status</span>
       <div class="filter-pills">
-        <!--
-          v-for — Rendering a list.
-          ─────────────────────────
-          In React:  {options.map(opt => <button key={opt.value}>...)}
-          In Vue:    <button v-for="opt in options" :key="opt.value">...
-
-          :key is REQUIRED when using v-for (just like React).
-          It helps Vue track which elements changed.
-
-          The @click sets the model's value, which
-          automatically syncs back to the parent.
-        -->
+     
         <button
           v-for="opt in statusOptions"
           :key="opt.value"
