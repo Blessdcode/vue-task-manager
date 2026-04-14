@@ -7,7 +7,7 @@ const status = defineModel<FilterStatus>('status', { required: true })
 const category = defineModel<FilterCategory>('category', { required: true })
 const priority = defineModel<FilterPriority>('priority', { required: true })
 
-// Filter options — we'll loop over these with v-for
+
 const statusOptions: { value: FilterStatus; label: string }[] = [
   { value: 'all', label: 'All' },
   { value: 'active', label: 'Active' },
@@ -32,7 +32,7 @@ const priorityOptions: { value: FilterPriority; label: string }[] = [
 
 <template>
   <div class="task-filter" id="task-filters">
-    <!-- Status filter -->
+  
     <div class="filter-group">
       <span class="filter-label">Status</span>
       <div class="filter-pills">
