@@ -1,19 +1,3 @@
-<!-- ============================================
-     COMPONENT — TaskFilter.vue
-     ============================================
-     🧠 WHAT YOU'LL LEARN HERE:
-
-     1. v-for — Looping/rendering lists
-        (like .map() in React)
-
-     2. :key — Why Vue needs keys on lists
-        (same reason as React!)
-
-     3. v-model with defineModel — The modern way
-        to create two-way-bindable props
-
-     4. Event binding with dynamic values
-     ============================================ -->
 
 <script setup lang="ts">
 import type { FilterStatus, FilterCategory, FilterPriority } from '@/composables/useTaskManager'
