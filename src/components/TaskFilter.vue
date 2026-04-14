@@ -50,7 +50,7 @@ const priorityOptions: { value: FilterPriority; label: string }[] = [
       </div>
     </div>
 
-    <!-- Category filter -->
+ 
     <div class="filter-group">
       <span class="filter-label">Category</span>
       <div class="filter-pills">
@@ -68,7 +68,7 @@ const priorityOptions: { value: FilterPriority; label: string }[] = [
       </div>
     </div>
 
-    <!-- Priority filter -->
+ 
     <div class="filter-group">
       <span class="filter-label">Priority</span>
       <div class="filter-pills">
@@ -143,13 +143,13 @@ const priorityOptions: { value: FilterPriority; label: string }[] = [
   background: var(--bg-card-hover);
 }
 
-/* Active pill state */
+
 .filter-pill.active {
   background: var(--accent-soft);
   color: var(--accent-light);
 }
 
-/* Priority-specific active colors */
+
 .filter-pill.active.pill-high {
   background: var(--priority-high-soft);
   color: var(--priority-high);
@@ -169,7 +169,7 @@ const priorityOptions: { value: FilterPriority; label: string }[] = [
   font-size: 13px;
 }
 
-/* On small screens, stack filters vertically */
+
 @media (max-width: 600px) {
   .task-filter {
     flex-direction: column;
