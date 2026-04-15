@@ -8,12 +8,7 @@ defineProps<{
   task: Task
 }>()
 
-/*
-  defineEmits — Events this component can send.
-  ──────────────────────────────────────────────────
-  We emit 'toggle' and 'delete' with the task ID,
-  and the parent decides what to do with it.
-*/
+
 const emit = defineEmits<{
   toggle: [id: string]
   delete: [id: string]
