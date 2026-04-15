@@ -43,15 +43,7 @@ function formatDate(dateStr: string): string {
 
   <div class="task-item" :class="{ completed: task.completed }" :id="`task-${task.id}`">
     <div class="task-content">
-      <!--
-        @click — Event handling.
-        ─────────────────────────
-        @ is shorthand for v-on:
-        We emit the 'toggle' event with the task's ID.
-
-        In React: onClick={() => onToggle(task.id)}
-        In Vue:   @click="emit('toggle', task.id)"
-      -->
+    
       <button
         class="check-btn"
         :class="{ checked: task.completed }"
