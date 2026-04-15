@@ -1,18 +1,4 @@
-<!-- ============================================
-     COMPONENT — TaskItem.vue
-     ============================================
-     🧠 WHAT YOU'LL LEARN HERE:
 
-     1. defineProps — How parent passes data down
-        (like React props, but with built-in validation)
-
-     2. defineEmits — Sending events back to parent
-
-     3. :class binding — Dynamic CSS classes
-        (like className={`${condition ? 'active' : ''}`} in React)
-
-     4. @click — Event handling in templates
-     ============================================ -->
 
 <script setup lang="ts">
 import type { Task } from '@/composables/useTaskManager'
