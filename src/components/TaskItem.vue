@@ -3,22 +3,7 @@
 <script setup lang="ts">
 import type { Task } from '@/composables/useTaskManager'
 
-/*
-  defineProps — Receiving data from parent.
-  ──────────────────────────────────────────────
-  In React:
-    function TaskItem({ task }: { task: Task }) { ... }
 
-  In Vue:
-    defineProps<{ task: Task }>()
-
-  Props are reactive — when the parent's data changes,
-  this component automatically re-renders.
-
-  ⚠️ KEY RULE: Props are READ-ONLY. You cannot modify
-  them directly. To change data, emit an event and let
-  the parent handle it. (Same principle as React.)
-*/
 defineProps<{
   task: Task
 }>()
