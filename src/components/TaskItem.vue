@@ -40,21 +40,7 @@ function formatDate(dateStr: string): string {
 </script>
 
 <template>
-  <!--
-    :class — Dynamic class binding.
-    ─────────────────────────────────
-    The : prefix (shorthand for v-bind:) makes the
-    attribute dynamic. Here we're using an object syntax:
 
-    :class="{ 'class-name': condition }"
-
-    If condition is true, the class is added.
-    If false, it's removed.
-
-    In React: className={`task-item ${task.completed ? 'completed' : ''}`}
-    In Vue:   :class="{ completed: task.completed }"
-    Much cleaner!
-  -->
   <div class="task-item" :class="{ completed: task.completed }" :id="`task-${task.id}`">
     <div class="task-content">
       <!--
