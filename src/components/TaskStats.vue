@@ -1,17 +1,3 @@
-<!-- ============================================
-     COMPONENT — TaskStats.vue
-     ============================================
-     🧠 WHAT YOU'LL LEARN HERE:
-
-     1. defineProps with complex types — Receiving
-        objects as props with TypeScript
-
-     2. Template expressions — Using {{ }} for
-        dynamic text (like {} in JSX)
-
-     3. Scoped styles — CSS that only affects
-        this component
-     ============================================ -->
 
 <script setup lang="ts">
 /*
