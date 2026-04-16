@@ -30,12 +30,7 @@ defineProps<{
       <span class="stat-number">{{ Math.round((stats.completed / stats.total) * 100) }}%</span>
       <span class="stat-label">Progress</span>
       <div class="progress-bar">
-        <!--
-          :style — Dynamic inline styles.
-          ─────────────────────────────────
-          Like React's style={{ width: '50%' }},
-          but uses :style (v-bind:style).
-        -->
+      
         <div
           class="progress-fill"
           :style="{ width: `${(stats.completed / stats.total) * 100}%` }"
