@@ -11,15 +11,7 @@ defineProps<{
 </script>
 
 <template>
-  <!--
-    Template expressions {{ }}
-    ─────────────────────────
-    Anything inside {{ }} is evaluated as JavaScript.
-    You can use any JS expression, not just variables:
-    {{ stats.total }}, {{ 1 + 1 }}, {{ condition ? 'yes' : 'no' }}
-
-    Similar to {} in JSX, but with double curly braces.
-  -->
+ 
   <div class="stats-bar" id="task-stats">
     <div class="stat-card">
       <span class="stat-number">{{ stats.total }}</span>
