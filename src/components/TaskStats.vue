@@ -25,15 +25,7 @@ defineProps<{
       <span class="stat-number">{{ stats.completed }}</span>
       <span class="stat-label">Done</span>
     </div>
-    <!--
-      v-if — Conditional rendering.
-      ──────────────────────────────
-      v-if completely removes the element from the DOM
-      when the condition is false (like React's {condition && <el>}).
-
-      There's also v-show which just toggles display:none
-      (better for frequently toggling elements).
-    -->
+   
     <div v-if="stats.completed > 0" class="stat-card stat-progress">
       <span class="stat-number">{{ Math.round((stats.completed / stats.total) * 100) }}%</span>
       <span class="stat-label">Progress</span>
