@@ -1,14 +1,6 @@
 
 <script setup lang="ts">
-/*
-  defineProps — Receiving an object prop.
-  ────────────────────────────────────────
-  We receive a 'stats' object from the parent.
-  TypeScript enforces the shape at compile time.
 
-  In the template, we can access props directly
-  (no props.stats needed — Vue auto-exposes them).
-*/
 defineProps<{
   stats: {
     total: number
