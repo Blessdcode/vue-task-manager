@@ -1,22 +1,4 @@
-// ============================================
-// COMPOSABLE — useTaskManager.ts
-// ============================================
-// 🧠 WHAT IS A COMPOSABLE?
-//
-// A composable is Vue's version of React hooks.
-// It's a function that starts with "use" and
-// contains reactive logic that can be shared
-// across components.
-//
-// Key difference from React hooks:
-// - React hooks re-run on every render
-// - Vue composables run ONCE, and the returned
-//   refs stay reactive automatically
-//
-// This composable manages all task state and
-// logic: adding, toggling, deleting, filtering,
-// and persisting to localStorage.
-// ============================================
+
 
 import { ref, computed, watch } from 'vue'
 
