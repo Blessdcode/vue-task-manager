@@ -8,12 +8,11 @@ export interface Task {
   createdAt: string
 }
 
-// What we can filter by
 export type FilterStatus = 'all' | 'active' | 'completed'
 export type FilterCategory = 'all' | Task['category']
 export type FilterPriority = 'all' | Task['priority']
 
-// ---- Helper: Load from localStorage ----
+
 function loadTasks(): Task[] {
   try {
     const stored = localStorage.getItem('vue-tasks')
@@ -23,7 +22,6 @@ function loadTasks(): Task[] {
   }
 }
 
-// ---- The Composable ----
 export function useTaskManager() {
   // ================================================
   // ref() — Creates a reactive variable.
