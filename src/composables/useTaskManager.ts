@@ -1,9 +1,4 @@
-
-
 import { ref, computed, watch } from 'vue'
-
-// ---- TypeScript Types ----
-// Define the shape of a Task object
 export interface Task {
   id: string
   title: string
