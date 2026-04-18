@@ -29,18 +29,7 @@ export function useTaskManager() {
   const filterCategory = ref<FilterCategory>('all')
   const filterPriority = ref<FilterPriority>('all')
 
-  // ================================================
-  // computed() — Derived/calculated values.
-  // ================================================
-  // Like useMemo() in React, but MUCH simpler:
-  // - Vue automatically tracks which refs you read
-  // - It re-computes only when those refs change
-  // - No dependency array needed!
-  //
-  // Example:
-  //   const doubled = computed(() => count.value * 2)
-  //   // doubled.value auto-updates when count changes
-  // ================================================
+  
   const filteredTasks = computed(() => {
     let result = tasks.value
 
