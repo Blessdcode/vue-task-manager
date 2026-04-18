@@ -66,18 +66,7 @@ export function useTaskManager() {
     active: tasks.value.filter((t) => !t.completed).length,
   }))
 
-  // ================================================
-  // watch() — Side effects when data changes.
-  // ================================================
-  // Like useEffect() in React, but:
-  // - You explicitly say WHAT to watch
-  // - No cleanup function confusion
-  // - It only runs when the watched value changes
-  //
-  // Here we save to localStorage whenever tasks change.
-  // The { deep: true } option watches nested changes
-  // (like toggling a task's completed property).
-  // ================================================
+
   watch(
     tasks,
     (newTasks) => {
