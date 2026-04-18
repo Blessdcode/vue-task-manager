@@ -106,16 +106,6 @@ export function useTaskManager() {
     tasks.value = tasks.value.filter((t) => !t.completed)
   }
 
-  // ================================================
-  // Return — What the composable exposes.
-  // ================================================
-  // Everything returned here can be used by any
-  // component that calls useTaskManager().
-  //
-  // Refs are returned as-is (still reactive).
-  // Functions are just regular functions.
-  // Computed values are read-only refs.
-  // ================================================
   return {
     // State (refs)
     tasks,
