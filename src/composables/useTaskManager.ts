@@ -23,19 +23,7 @@ function loadTasks(): Task[] {
 }
 
 export function useTaskManager() {
-  // ================================================
-  // ref() — Creates a reactive variable.
-  // ================================================
-  // Think of ref() like useState() in React, but:
-  // - You access the value with .value in JS/TS
-  // - In the <template>, Vue auto-unwraps it (no .value needed)
-  // - It stays reactive forever — no re-renders needed
-  //
-  // Example:
-  //   const count = ref(0)
-  //   count.value++  // ← need .value in script
-  //   {{ count }}    // ← no .value in template
-  // ================================================
+ 
   const tasks = ref<Task[]>(loadTasks())
   const filterStatus = ref<FilterStatus>('all')
   const filterCategory = ref<FilterCategory>('all')
