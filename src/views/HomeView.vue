@@ -1,21 +1,3 @@
-<!-- ============================================
-     VIEW — TaskManager.vue (was HomeView.vue)
-     ============================================
-     🧠 WHAT YOU'LL LEARN HERE:
-
-     1. Using a composable — Calling useTaskManager()
-        to get shared state and functions
-
-     2. Composing components — Putting all the
-        pieces together like LEGO
-
-     3. <TransitionGroup> — Vue's built-in animation
-        system for lists
-
-     4. v-if / v-else — Conditional rendering branches
-
-     5. @event handling — Listening to child events
-     ============================================ -->
 
 <script setup lang="ts">
 /*
