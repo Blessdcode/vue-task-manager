@@ -1,15 +1,5 @@
 
 <script setup lang="ts">
-/*
-  Importing components and composables.
-  ──────────────────────────────────────
-  In Vue's <script setup>, you just import and use.
-  No need to register components — they're automatically
-  available in the template by their import name.
-
-  The @ symbol is an alias for /src (configured in Vite).
-  So @/composables/... means src/composables/...
-*/
 import TaskForm from '@/components/TaskForm.vue'
 import TaskItem from '@/components/TaskItem.vue'
 import TaskFilter from '@/components/TaskFilter.vue'
