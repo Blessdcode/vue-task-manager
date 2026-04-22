@@ -39,17 +39,7 @@ const {
  
     <TaskForm @add="addTask" />
 
-    <!--
-      TaskFilter — v-model with named models.
-      ────────────────────────────────────────
-      v-model:status means "two-way bind the 'status' model."
 
-      This creates a two-way data flow:
-      - Parent passes filterStatus DOWN to TaskFilter
-      - TaskFilter can update filterStatus directly
-
-      It's like passing [state, setState] as a single prop.
-    -->
     <TaskFilter
       v-model:status="filterStatus"
       v-model:category="filterCategory"
