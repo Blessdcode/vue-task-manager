@@ -50,17 +50,7 @@ const {
     <div class="task-list" id="task-list">
     
       <TransitionGroup name="list" tag="div" class="task-items">
-        <!--
-          v-for with components + events.
-          ─────────────────────────────────
-          We loop through filteredTasks (a computed ref)
-          and render a TaskItem for each one.
-
-          :task="task" passes the task object as a prop
-          @toggle="toggleTask" listens for the toggle event
-          @delete="deleteTask" listens for the delete event
-          :key="task.id" is required for Vue's diffing algorithm
-        -->
+       
         <TaskItem
           v-for="task in filteredTasks"
           :key="task.id"
