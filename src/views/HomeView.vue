@@ -36,17 +36,7 @@ const {
     <!-- Stats bar (receives computed stats as props) -->
     <TaskStats :stats="stats" />
 
-    <!--
-      TaskForm — Listening for emitted events.
-      ─────────────────────────────────────────
-      When TaskForm calls emit('add', title, category, priority),
-      we catch it here with @add="addTask".
-
-      The arguments from emit are automatically passed to addTask.
-
-      In React: <TaskForm onAdd={addTask} />
-      In Vue:   <TaskForm @add="addTask" />
-    -->
+ 
     <TaskForm @add="addTask" />
 
     <!--
