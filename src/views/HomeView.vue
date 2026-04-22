@@ -60,17 +60,7 @@ const {
         />
       </TransitionGroup>
 
-      <!--
-        v-if / v-else — Conditional branches.
-        ───────────────────────────────────────
-        v-if="condition" renders block A
-        v-else renders block B (must be the next sibling)
-
-        You can also chain: v-if → v-else-if → v-else
-
-        In React: {condition ? <A /> : <B />}
-        In Vue: <A v-if="condition" /><B v-else />
-      -->
+     
       <div v-if="filteredTasks.length === 0" class="empty-state">
         <div class="empty-icon">📭</div>
         <p class="empty-text" v-if="stats.total === 0">No tasks yet. Add one above!</p>
