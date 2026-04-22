@@ -48,23 +48,7 @@ const {
 
     <!-- Task list -->
     <div class="task-list" id="task-list">
-      <!--
-        <TransitionGroup> — Animating list changes.
-        ──────────────────────────────────────────────
-        Vue has BUILT-IN animation support! TransitionGroup
-        automatically applies CSS classes when items are:
-        - Added (list-enter-from → list-enter-active)
-        - Removed (list-leave-active → list-leave-to)
-        - Moved (list-move)
-
-        We defined these CSS classes in main.css.
-        React has no built-in equivalent — you'd need
-        Framer Motion or React Transition Group.
-
-        The tag="div" prop specifies the wrapper element
-        to render. name="list" corresponds to our CSS
-        class prefix (list-enter-from, etc).
-      -->
+    
       <TransitionGroup name="list" tag="div" class="task-items">
         <!--
           v-for with components + events.
