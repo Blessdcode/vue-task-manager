@@ -6,22 +6,7 @@ import TaskFilter from '@/components/TaskFilter.vue'
 import TaskStats from '@/components/TaskStats.vue'
 import { useTaskManager } from '@/composables/useTaskManager'
 
-/*
-  Using the composable.
-  ──────────────────────
-  We call useTaskManager() and destructure the returned
-  object to get all the state and functions we need.
 
-  Because everything returned is reactive (refs/computed),
-  the template will automatically update when data changes.
-
-  This is like calling a custom hook in React:
-    const { tasks, addTask, ... } = useTaskManager()
-
-  The key difference: Vue composables run ONCE, and the
-  refs they return stay reactive forever. React hooks
-  re-run on every render.
-*/
 const {
   filterStatus,
   filterCategory,
