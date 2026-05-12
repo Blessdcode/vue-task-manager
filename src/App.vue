@@ -1,17 +1,4 @@
-<!-- ============================================
-     APP SHELL — App.vue
-     ============================================
-     🧠 WHAT YOU'LL LEARN HERE:
 
-     1. <RouterView> — Vue Router's outlet component
-        (like React Router's <Outlet />)
-
-     2. App.vue is the ROOT component. Every Vue app
-        has exactly one. It wraps everything.
-
-     3. main.ts creates the app, registers plugins
-        (like the router), and mounts it to the DOM.
-     ============================================ -->
 
 <script setup lang="ts">
 /*
