@@ -1,15 +1,7 @@
 
 
 <script setup lang="ts">
-/*
-  We import RouterView from vue-router.
-  ──────────────────────────────────────
-  RouterView is where the matched route component
-  gets rendered. When the URL changes, Vue Router
-  swaps the component inside <RouterView />.
 
-  Think of it like React Router's <Outlet />.
-*/
 import { RouterView } from 'vue-router'
 </script>
 
